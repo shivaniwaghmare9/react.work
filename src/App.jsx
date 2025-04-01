@@ -2,6 +2,7 @@
 // import Object from "./Object";
 // import Vari from "./Variable";
 
+
 //====================================Array of=Object========================================================================
 // const data={
 //   name:"shivani",
@@ -30,33 +31,32 @@
 //export default Work;
 //=================================================ARRAY.MAP=========================================================================
 
-const array=()=>{
-  const arr=["PHp", "oracle" ,"Java","React"]
-  const ans2=arr.map((key)=>{
-    return(
-      <>
-         {/* <h1>{key}</h1> */}
-         {/* <option>{key}</option> */}
-         <li>{key}</li>
-      </>
-    )
-  })
-  return(
-    <>
-    <h1 align="center">Welcome Array Topic!!!</h1>
-    <hr />
+// const array=()=>{
+//   const arr=["PHp", "oracle" ,"Java","React"]
+//   const ans2=arr.map((key)=>{
+//     return(
+//       <>
+//          {/* <h1>{key}</h1> */}
+//          {/* <option>{key}</option> */}
+//          <li>{key}</li>
+//       </>
+//     )
+//   })  
+//   return(
+//     <>
+//     <h1 align="center">Welcome Array Topic!!!</h1>
+//     <hr />
     
-    {/* {ans2} */}
-    {/* <select>{ans2}</select> */}
-    <ul>{ans2}</ul>
-    </>
+//     {/* {ans2} */}
+//     {/* <select>{ans2}</select> */}
+//     <ul>{ans2}</ul>
+//     </>
 
-  )
-}
-export default array;
+//   )
+// }
+// export default array;
+
 //=========================================array of object with map method==============================================================================
-
-
 //  const table=()=>{
 
 //      const Record=[
@@ -145,3 +145,35 @@ export default array;
 //   )
 // }
 // export default table2;
+
+//==================================================LAYOUT- OUTLAT===========================================================================================
+
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Product from "./pages/Product";
+import Contact from "./pages/Contact";
+
+const Page=()=>{
+  return(
+    <>
+      <h1>Welcome To React Classes!! This Our Work Time!!!</h1>
+      
+      <hr />
+      <BrowserRouter>
+         <Routes>
+            <Route path="/" element={<Layout/>}>
+               <Route index element={<Home/>}/>
+               <Route path="home" element={<Home/>}/>
+               <Route path="about" element={<About/>}/>
+               <Route path="product" element={<Product/>}/>
+               <Route path="contact" element={<Contact/>}/>
+            </Route>
+         </Routes>
+      </BrowserRouter>
+
+    </>
+  )
+}
+export default Page;
