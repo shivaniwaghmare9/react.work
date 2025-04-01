@@ -28,7 +28,34 @@
 
 //}
 //export default Work;
+//=================================================ARRAY.MAP=========================================================================
+
+const array=()=>{
+  const arr=["PHp", "oracle" ,"Java","React"]
+  const ans2=arr.map((key)=>{
+    return(
+      <>
+         {/* <h1>{key}</h1> */}
+         {/* <option>{key}</option> */}
+         <li>{key}</li>
+      </>
+    )
+  })
+  return(
+    <>
+    <h1 align="center">Welcome Array Topic!!!</h1>
+    <hr />
+    
+    {/* {ans2} */}
+    {/* <select>{ans2}</select> */}
+    <ul>{ans2}</ul>
+    </>
+
+  )
+}
+export default array;
 //=========================================array of object with map method==============================================================================
+
 
 //  const table=()=>{
 
@@ -90,31 +117,31 @@
 //     )
 // }
 // export default table;
-//========================================array of object with map &componant file==========================================================================================
-import Data from "./EmpData"
-import Design from "./EmpDesign"
+//========================================array of object with map &component file==========================================================================================
+// import Data from "./EmpData"
+// import Design from "./EmpDesign"
 
-  const table2=()=>{
-  const info=Data.map((key)=> <Design 
-  nm={key.name} 
-  no={key.empno}
-   ps={key.post}  
-   sal={key.sal}/>)
+//   const table2=()=>{
+//   const info=Data.map((key)=> <Design 
+//   nm={key.name} 
+//   no={key.empno}
+//    ps={key.post}  
+//    sal={key.sal}/>)
 
-  return(
-    <>
-    <h1 align="center">Employ Records!!!</h1>
-    <hr />
-    <table border="1" width="600">
-      <tr>
-        <th>Name</th>
-        <th>Empno</th>
-        <th>Post</th>
-        <th>Salary</th>
-      </tr>
-      {info}
-    </table>
-    </>
-  )
-}
-export default table2;
+//   return(
+//     <>
+//     <h1 align="center">Employ Records!!!</h1>
+//     <hr />
+//     <table border="1" width="600">
+//       <tr>
+//         <th>Name</th>
+//         <th>Empno</th>
+//         <th>Post</th>
+//         <th>Salary</th>
+//       </tr>
+//       {info}
+//     </table>
+//     </>
+//   )
+// }
+// export default table2;
