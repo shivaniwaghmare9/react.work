@@ -8,13 +8,14 @@ const Layout=()=>{
         <Link to="about">About</Link>
         <Link to="product">Product</Link>
         <Link to="contact">Contact</Link>
+        
 
 
         <hr />
            <Outlet/>
         <hr />
 
-        www.Mycompany.com
+        www.Mycompany.com........
         </>
     )
 }
